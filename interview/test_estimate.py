@@ -1,12 +1,12 @@
-from estimate import round
+from estimate import rounder
 
 def test_rounder():
     # ensure that any floating decimal >= .5 gets rounded up
-    assert round(0) == 0
-    assert round(.5) == 1
+    assert rounder(0) == 0
+    assert rounder(.5) == 1
 
-    assert round(1.0) == 1
-    assert round(1.2) == 1
+    assert rounder(1.0) == 1
+    assert rounder(1.2) == 1
 
-    assert round(7.6) == 8
-    assert round(7.9) == 8
+    assert rounder(7.6) == 8
+    assert rounder(7.9) == 8
