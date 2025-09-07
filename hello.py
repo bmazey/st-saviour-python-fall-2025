@@ -1,3 +1,3 @@
 
 if __name__ == '__main__':
-    print('new dawn, new day!')
+    print('Welcome to AP CS: Principles!')
