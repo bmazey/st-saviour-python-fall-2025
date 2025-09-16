@@ -1,4 +1,5 @@
 import random
+import string
 
 def generate_password() -> str:
     """
@@ -10,10 +11,8 @@ def generate_password() -> str:
         - the final character is a symbol [!@#$%^&*]
         - it's relatively uncommon to generate the same password twice 
     """
+    letters = ''.join(random.choices(string.ascii_lowercase, k=5))
+    digits = ''.join(random.choices(string.digits, k=4))
+    symbol = random.choice('!@#$%^&*')
 
-    # HINT you will require the use of a random number generator for this function
-    # https://docs.python.org/3/library/random.html#random.randint
-
-    # TODO implement generate_password function
-
-    return ''
+    return letters + digits + symbol
