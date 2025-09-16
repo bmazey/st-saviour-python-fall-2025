@@ -10,4 +10,18 @@ def seven_eleven(number: int) -> str:
 
     # TODO implement seven_eleven function
 
-    return ''
+
+
+if int % 7 == 0 and int % 11 == 0:
+        print ('seveneleven')
+else:
+        None
+if int % 7 == 0:
+        print ('seven')
+else:
+        None
+if int % 11 == 0:
+        print ('eleven')
+else:
+        None
+None == ''
