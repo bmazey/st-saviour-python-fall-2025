@@ -1,10 +1,13 @@
 
-def rounder(number: float) -> int:
+def seven_eleven(number: int) -> str:
     """
-    round accepts a float and returns a rounded integer.
-    the number is rounded up iff the decimal is >= .5
+    seven_eleven() is a funtion whick takes a number and returns
+        - 'seven' if the number is a multiple of 7
+        - 'eleven' if the number is a multiple of 11
+        - 'seveneleven' if the number is a multiple of 7 and 11
+        - an empty string if the number is not a multiple of 7 or 11
     """
 
-    # TODO implement round function
+    # TODO implement seven_eleven function
 
     return 0
