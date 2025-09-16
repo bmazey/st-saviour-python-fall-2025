@@ -11,17 +11,9 @@ def seven_eleven(number: int) -> str:
     # TODO implement seven_eleven function
 
 
-
-if int % 7 == 0 and int % 11 == 0:
-        print ('seveneleven')
-else:
-        None
-if int % 7 == 0:
+if int/'seven' == ('seven')*(int):
         print ('seven')
-else:
-        None
-if int % 11 == 0:
+if int/'eleven' == ('eleven')*(int):
         print ('eleven')
-else:
-        None
-None == ''
+if int/'eleven' == ('eleven')*(int) and int/'seven' == ('seven')(int):
+        print ('eleven')
