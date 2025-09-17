@@ -9,11 +9,22 @@ def seven_eleven(number: int) -> str:
     """
 
     # TODO implement seven_eleven function
+# tried % didnt work
+# tried division, didnt work
+# tried switching 'seven' to 7
+# tries elif instead of if
+# i dont get this
+# as of right now i am trying random stuff ill write down something if it works
 
-
-if int/'seven' == ('seven')*(int):
-        print ('seven')
-if int/'eleven' == ('eleven')*(int):
-        print ('eleven')
-if int/'eleven' == ('eleven')*(int) and int/'seven' == ('seven')(int):
-        print ('eleven')
+# its return not print
+# idk why modulo wasnt working before but it is now and im happy
+# i also dont know why number wasnt working, prolly b/c i didnt make it a command, thanks Mr Sadushi and Google for Elif and thank google for Return
+def seven_eleven(number: int) -> str:
+    if number % 7 == 0 and number % 11 == 0:
+        return "seveneleven"
+    elif number % 7 == 0:
+        return "seven"
+    elif number % 11 == 0:
+        return "eleven"
+    else:
+        return ""
