@@ -5,6 +5,8 @@ def rounder(number: float) -> int:
     the number is rounded up iff the decimal is >= .5
     """
 
+    decimal = number - int(number)
     # TODO implement round function
-
-    return 0
+    if decimal >= 0.5: 
+        return int(number) + 1
+    return int(number)
