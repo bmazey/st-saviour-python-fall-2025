@@ -4,7 +4,6 @@ if __name__ == '__main__':
     #hello from my branch!
     print('Welcome to AP CS: Principles!')
 
-    number = 3.5
-    print(number - int(number))
-
+    s = 'september'
+    print(s[::-1])
 
