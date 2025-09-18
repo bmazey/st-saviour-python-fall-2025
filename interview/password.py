@@ -16,4 +16,26 @@ def generate_password() -> str:
 
     # TODO implement generate_password function
 
-    return ''
+import random
+
+# got this from google
+def generate_password() -> str:
+    lowercase_characters = "abcdefghijklmnopqrstuv" 
+digits = "0123456789"
+symbols = "!@#$^&*"
+lowercase_characters = "abcdefghijklmnopqrstuv"
+password_parts = [] 
+
+def generate_password() -> str:
+# also google
+    for _ in range(5):
+        password_parts.append(random.choice(lowercase_characters))
+    for _ in range(4):
+        password_parts.append(random.choice(digits))
+    for _ in range(1):
+        password_parts.append(random.choice(symbols))
+        return "".join(password_parts)
+    
+if 2+2 == 4:
+    password = generate_password()
+    print (f"Generated Password: {password}")
