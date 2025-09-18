@@ -29,7 +29,7 @@ def shred_first_character(s: str) -> str:
     # TODO
 
     return s[1:]
-# s[1:] and s[1] are different because the ':'makes it like everything BUT something, instead of just 1 it cuts off 1 and leaves the rest
+# [x:y:z], x: start inclusive, :y: end exclusive, :z step increment
 
 def shred_last_character(s: str) -> str:
     """
