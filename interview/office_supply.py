@@ -17,7 +17,7 @@ def staple_to_end(s: str, c: str) -> str:
 
     # TODO
 
-    return ''
+    return  s + c 
 
 def shred_first_character(s: str) -> str:
     """
