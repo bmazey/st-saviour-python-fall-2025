@@ -39,3 +39,4 @@ def generate_password() -> str:
 if 2+2 == 4:
     password = generate_password()
     print (f"Generated Password: {password}")
+    # f is for 'formatted string literal' (it printst out the actual answer instead of just 'password')
