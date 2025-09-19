@@ -8,7 +8,7 @@ def rounder(number: float) -> int:
     decimal = number - int(number)
 
     if decimal >= 0.5: 
-       result = int(number) + 1 # add 1 to round up decimal because the decimal is greater than .5
+        result = int(number) + 1 # add 1 to round up decimal because the decimal is greater than .5
     else:
         result = int(number) 
 

@@ -38,3 +38,4 @@ def shred_last_character(s: str) -> str:
     # TODO
 
     return ''
+
