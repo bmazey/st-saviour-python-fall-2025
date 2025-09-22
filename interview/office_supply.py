@@ -4,7 +4,7 @@ def staple_to_front(s: str, c: str) -> str:
     staple_to_front() accepts two strings s, c and returns a new string:
       - ex: staple_to_front('saviour', 'st. ') -> 'st. saviour'
     """
-    # sby using the plus sign we concatenate the strings c and s to create the new combined string
+    # by using the plus sign we concatenate the strings c and s to create the new combined string
     result = c + s 
     return result
 

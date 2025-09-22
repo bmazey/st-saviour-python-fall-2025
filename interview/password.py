@@ -13,5 +13,14 @@ def generate_password() -> str:
 
     # HINT you will require the use of a random number generator for this function
     # https://docs.python.org/3/library/random.html#random.randint
-    random.choice(0, 1, 2, 3, 4, 5, 6, 7, 8, 9)
-    return 'giada2467$'
+    
+    letters = 'abcdefghijklmnopqrstuvwxyz'
+    numbers = '0123456789'
+    symbols = '!@#$%^&*'
+
+    password = '' 
+    r = random.randint(0, len(letters) - 1)
+    password += letters[r]
+
+
+    return password

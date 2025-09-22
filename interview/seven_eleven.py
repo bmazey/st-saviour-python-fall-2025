@@ -7,11 +7,14 @@ def seven_eleven(number: int) -> str:
         - 'seveneleven' if the number is a multiple of 7 and 11
         - an empty string if the number is not a multiple of 7 or 11
     """
-
-    if number % 7 == 0 and number % 11 == 0:#use modulo to show if the number is a multiple  of 7 and 11
+    # use modulo to show if the number is a multiple  of 7 and 11
+    if number % 7 == 0 and number % 11 == 0:
         return 'seveneleven'
-    if number % 7 == 0: # use the modulo to show if the number is just a multiple of 7 only.
+    # use the modulo to show if the number is just a multiple of 7 only
+    if number % 7 == 0: 
         return 'seven'
-    if number % 11 == 0:# use the modulo to show if the number is just a multiple of 11 only.
+    # use the modulo to show if the number is just a multiple of 11 only
+    if number % 11 == 0:
         return 'eleven'
-    return ''   # return an empty string to show if its not a multiple of either 7 or 11. 
+    # return an empty string to show if its not a multiple of either 7 or 11
+    return ''  
