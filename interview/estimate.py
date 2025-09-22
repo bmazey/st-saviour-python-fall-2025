@@ -10,4 +10,3 @@ def rounder(number: float) -> int:
         return int(number) + 1
     else:
         return int(number)
-

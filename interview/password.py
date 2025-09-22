@@ -36,7 +36,7 @@ def generate_password() -> str:
         password_parts.append(random.choice(symbols))
         return "".join(password_parts)
     
-if 2+2 == 4:
-    password = generate_password()
-    print (f"Generated Password: {password}")
-    # f is for 'formatted string literal' (it printst out the actual answer instead of just 'password')
+
+password = generate_password()
+print (f"generated password: {password}")
+# f is for 'formatted string literal' (it printst out the actual answer instead of just 'password' (thanks google))
