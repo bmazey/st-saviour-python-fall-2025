@@ -6,10 +6,11 @@ def rounder(number: float) -> int:
     """
 
     decimal = number - int(number)
-
+    # plus 1 if the decimal place is greater than 0.5, you round up
     if decimal >= 0.5:
-        result = int(number) + 1 #plus 1 if the decimal place is greater than 0.5, you round up
+        result = int(number) + 1 
+    # you would leave the else result  alone since you would round downto the integer itself.
     else:
-        result = int(number) #leave it alone since you would round downto the integer itself. 
+        result = int(number)  
 
     return result
