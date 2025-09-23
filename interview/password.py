@@ -22,4 +22,8 @@ def generate_password() -> str:
     r = random.randit(0, len(letters) - 1)
     password += letters[r]
     
+   # now do numbers
+   r = random.randint(0, len(letters) - 1)
+   password += numbers[r]
+   
     return password
