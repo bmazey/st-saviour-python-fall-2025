@@ -5,9 +5,8 @@ def staple_to_front(s: str, c: str) -> str:
       - ex: staple_to_front('saviour', 'st. ') -> 'st. saviour'
     """
 
-    # TODO
-
-    return ''
+    result = s + c 
+    return result #concatenating the two strings together 
 
 def staple_to_end(s: str, c: str) -> str:
     """
@@ -15,9 +14,8 @@ def staple_to_end(s: str, c: str) -> str:
       - ex: staple_to_front('st. ', 'saviour') -> 'st. saviour'
     """
 
-    # TODO
-
-    return ''
+    result = c + s 
+    return result #concatenating but switching the order of s and c - c + s
 
 def shred_first_character(s: str) -> str:
     """
