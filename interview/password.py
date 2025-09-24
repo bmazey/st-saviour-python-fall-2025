@@ -14,6 +14,13 @@ def generate_password() -> str:
     # HINT you will require the use of a random number generator for this function
     # https://docs.python.org/3/library/random.html#random.randint
 
-    # TODO implement generate_password function
+    # remember to import random so syntax error does not occur and the code can randomize a number
+    letters = 'abcdefghijklmnopqrstuvwxyz'
+    print('the length of letters is: ' + str(len(letters)))
+    r = random.randint(0, len(letters) - 1)
+    print('the random int is: ' + str(r))
+    print('the random letter is: ' + letters[r])
+
+r = random.randint(0, len )
 
     return ''
