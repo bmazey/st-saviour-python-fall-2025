@@ -32,7 +32,9 @@ def test_password_length():
 def test_password_unique():
     # HINT we ignore collisions for the purposes of this exercise
     # TODO BONUS create two passwords, and ensure they are distinct
-    pass
+    first_password = generate_password()
+    second_password = generate_password()
+    assert not first_password == second_password
 
 def contains(s: str, collection: list):
     # check if any characters in collection are present in s
