@@ -14,6 +14,7 @@ def generate_password() -> str:
     # HINT you will require the use of a random number generator for this function
     # https://docs.python.org/3/library/random.html#random.randint
     
+    # this gives the program something to refrence when trying yo make the code
     letters = 'abcdefghijklmnopqrstuvwxyz'
     numbers = '0123456789'
     symbols = '!@#$%^&*'
@@ -22,5 +23,40 @@ def generate_password() -> str:
     r = random.randint(0, len(letters) - 1)
     password += letters[r]
 
+    r = random.randint(0, len(letters) - 1)
+    password += letters[r]
+
+    
+    r = random.randint(0, len(letters) - 1)
+    password += letters[r]
+
+     
+    r = random.randint(0, len(letters) - 1)
+    password += letters[r]
+
+     
+    r = random.randint(0, len(letters) - 1)
+    password += letters[r]
+
+    # the code can make the numbers now 
+    r = random.randint(0, len(numbers) - 1)
+    password += numbers[r]
+
+    r = random.randint(0, len(numbers) - 1)
+    password += numbers[r]
+
+    r = random.randint(0, len(numbers) - 1)
+    password += numbers[r]
+
+    r = random.randint(0, len(numbers) -1)
+    password += numbers[r]
+
+    # allow the code to make symbol
+
+    r = random.randint(0, len(symbols) - 1)
+    password += symbols[r]
+
 
     return password
+
+print('my password is: ' + generate_password())

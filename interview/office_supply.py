@@ -31,5 +31,5 @@ def shred_last_character(s: str) -> str:
     shred_last_character() accepts a string s and returns a new string:
       - ex: shred_first_character('st. saviourr') -> 'st. saviour'
     """
-    # using the -1 it allows the output to be the opposite of the string
+    # using the -1 it allows the output to be the whole string except the last character 
     return s[ :-1] 
