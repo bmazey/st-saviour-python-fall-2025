@@ -5,11 +5,11 @@ def test_password_alpha_characters():
     # TODO BONUS ensure that the first 5 characters are letters
     pass
     password = generate_password()
-    assert password(0).isalpha()
-    assert password(1).isalpha()
-    assert password(2).isalpha()
-    assert password(3).isalpha()
-    assert password(4).isalpha()
+    assert password[0].isalpha()
+    assert password[1].isalpha()
+    assert password[2].isalpha()
+    assert password[3].isalpha()
+    assert password[4].isalpha()
 
 def test_password_numeric_characters():
     # TODO BONUS ensure the placement of the 4 digit characters
@@ -26,7 +26,8 @@ def test_password_symbol_character():
 
 def test_password_length():
     # TODO BONUS ensure the length of the password is 10
-    
+    password = generate_password()
+    assert len(password) == 10
 
 def test_password_unique():
     # HINT we ignore collisions for the purposes of this exercise
