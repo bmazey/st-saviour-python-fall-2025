@@ -3,7 +3,6 @@ from password import generate_password
 
 def test_password_alpha_characters():
     # TODO BONUS ensure that the first 5 characters are letters
-    pass
     password = generate_password()
     assert password[0].isalpha()
     assert password[1].isalpha()
@@ -14,15 +13,16 @@ def test_password_alpha_characters():
 def test_password_numeric_characters():
     # TODO BONUS ensure the placement of the 4 digit characters
     password  = generate_password()
-    assert password[0].isdigit()
-    assert password[1].isdigit()
-    assert password[2].isdigit()
-    assert password[3].isdigit()
+    assert password[5].isdigit()
+    assert password[6].isdigit()
+    assert password[7].isdigit()
+    assert password[8].isdigit()
 
 def test_password_symbol_character():
     # TODO BONUS ensure the final character is a symbol
     password  = generate_password()
-    assert password[0].issymbol()
+    assert not password[9].isalpha()
+    assert not password[9].isdigit()
 
 def test_password_length():
     # TODO BONUS ensure the length of the password is 10
