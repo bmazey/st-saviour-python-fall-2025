@@ -19,11 +19,39 @@ def generate_password() -> str:
     symbols = '!@#$%&*'
     
     password = ''
-    r = random.randit(0, len(letters) - 1)
+    r = random.randint(0, len(letters) - 1)
     password += letters[r]
+
+    r = random.randint(0, len(letters) - 1)
+    password += letters[r]
+
+    r = random.randint(0, len(letters) - 1)
+    password += letters[r]
+
+    r = random.randint(0, len(letters) - 1)
+    password += letters[r]
+
+    r = random.randint(0, len(letters) - 1)
+    password += letters[r]
+
     
    # now do numbers
-   r = random.randint(0, len(letters) - 1)
-   password += numbers[r]
-   
+    r = random.randint(0, len(numbers) - 1)
+    password += numbers[r]
+
+    r = random.randint(0, len(numbers) - 1)
+    password += numbers[r]
+
+    r = random.randint(0, len(numbers) - 1)
+    password += numbers[r]
+
+    r = random.randint(0, len(numbers) - 1)
+    password += numbers[r]
+
+    # now do symbols
+    r = random.randint(0, len(symbols) - 1)
+    password += symbols[r]
+
     return password
+
+print('my password is: ' + generate_password())
