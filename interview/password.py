@@ -25,16 +25,13 @@ def generate_password() -> str:
 
     r = random.randint(0, len(letters) - 1)
     password += letters[r]
-
     
     r = random.randint(0, len(letters) - 1)
     password += letters[r]
-
      
     r = random.randint(0, len(letters) - 1)
     password += letters[r]
 
-     
     r = random.randint(0, len(letters) - 1)
     password += letters[r]
 
@@ -52,10 +49,8 @@ def generate_password() -> str:
     password += numbers[r]
 
     # allow the code to make symbol
-
     r = random.randint(0, len(symbols) - 1)
     password += symbols[r]
-
 
     return password
 
