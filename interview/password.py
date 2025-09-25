@@ -19,7 +19,8 @@ def generate_password() -> str:
     numbers = '0123456789'
     symbols = '!@#$%^&*'
 
-    # since the objective is to code a password with 5 lowercase letters 4 numbers and 1 symbol we have to allow the code to generate 5 random number first thats why there is 5 seperate pieces of code for the letters
+    # since the first objective is to code a password with 5 lowercase letters we have to allow the code to generate 5 random numbers
+    # there should be 5 seperate pieces of code for the letters
     # we could do that by using the random string and the length of the total amount of letters in the alphabet
     # we could subtract 1 because the index starts at 0 so when we would get to the 26th letter it would be at the 25th index
     password = '' 
