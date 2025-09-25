@@ -19,10 +19,10 @@ def generate_password() -> str:
     numbers = '0123456789'
     symbols = '!@#$%^&*'
 
-    # since the first objective is to code a password with 5 lowercase letters we have to allow the code to generate 5 random numbers
-    # there should be 5 seperate pieces of code for the letters
-    # we could do that by using the random string and the length of the total amount of letters in the alphabet
-    # we could subtract 1 because the index starts at 0 so when we would get to the 26th letter it would be at the 25th index
+    # we have to allow the code to generate 5 random numbers
+    # there should be 5 seperate pieces of code 
+    # use the random string and the len of the total amount of letters in the alphabet
+    # we would subtract 1 since theres always one less index of the actual number of numbers
     password = '' 
     r = random.randint(0, len(letters) - 1)
     password += letters[r]
@@ -40,7 +40,7 @@ def generate_password() -> str:
     password += letters[r]
 
     # the code can make the numbers now 
-    # since we need to generate 4 random numbers we would do 4 differnt pieces of code for the numbers
+    # since we need to generate 4 random numbers we would do 4 differnt codes for the numbers
     # we would use the random string and len of the single numbers starting at 0 and ending at 9 
     # we would have to subtract 1 since there are 10 number and only 9 indexes starting with zero
     r = random.randint(0, len(numbers) - 1)
@@ -59,7 +59,7 @@ def generate_password() -> str:
     # we only need one piece of code since there only needs to be one symbol 
     # we would use the random string to get a random symbol
     # we would use the len to tell the code to use all the symbols given
-    # we would subtract 1 since there will always be one less index of the actual number of symbols
+    # we would subtract 1 since theres always one less index of the actual number of symbols
     r = random.randint(0, len(symbols) - 1)
     password += symbols[r]
 
