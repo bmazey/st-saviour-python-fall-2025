@@ -23,7 +23,7 @@ def shred_first_character(s: str) -> str:
       - ex: shred_first_character('sst. saviour') -> 'st. saviour'
     """
     # the first part of the slice tells us that the character at the index of 1 will be shredded and the rest of the word will be printed 
-    return s[1: ] 
+    return s[1:] 
 
 def shred_last_character(s: str) -> str:
     """
@@ -31,4 +31,4 @@ def shred_last_character(s: str) -> str:
       - ex: shred_first_character('st. saviourr') -> 'st. saviour'
     """
     # using the -1 it allows the output to be the whole string except the last character 
-    return s[ :-1] 
+    return s[:-1] 
