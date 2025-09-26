@@ -1,4 +1,5 @@
 import random
+import string
 
 def generate_password() -> str:
     """
@@ -11,16 +12,13 @@ def generate_password() -> str:
         - it's relatively uncommon to generate the same password twice 
     """
 
-    # HINT you will require the use of a random number generator for this function
-    # https://docs.python.org/3/library/random.html#random.randint
+    letters = ''.join(random.choices(string.ascii_lowercase, k=5))
+    # this describes the letter string and generates 5 random lowercase letters
+    digits = ''.join(random.choices(string.digits, k=4))
+    # this describes the number string and generates 4 random numbers
+    symbol = random.choice('!@#$%^&*')
+    # this describes the symbol string and generates 1 random symbol
+    return letters + digits + symbol
+    # this combines all other strings into one string with 5 letters, 4 numbers, and 1 symbol
+    
 
-    # remember to import random so syntax error does not occur and the code can randomize a number
-    letters = 'abcdefghijklmnopqrstuvwxyz'
-    print('the length of letters is: ' + str(len(letters)))
-    r = random.randint(0, len(letters) - 1)
-    print('the random int is: ' + str(r))
-    print('the random letter is: ' + letters[r])
-
-r = random.randint(0, len )
-
-    return ''
