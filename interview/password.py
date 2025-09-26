@@ -1,4 +1,5 @@
 import random
+import string
 
 def generate_password() -> str:
     """
@@ -14,6 +15,21 @@ def generate_password() -> str:
     # HINT you will require the use of a random number generator for this function
     # https://docs.python.org/3/library/random.html#random.randint
 
-    # TODO implement generate_password function
+    # Generate the 5 lowercase letters
+    letters = string.ascii_lowercase
+    password_part1 = "".join(random.choices(letters, k=5))
 
-    return ''
+    # Generate the 4 digits
+    digits = string.digits
+    password_part2 = "".join(random.choices(digits, k=4))
+
+    # Generate the 1 symbol
+    symbols = "!@#$%^&*"
+    password_part3 = random.choice(symbols)
+
+    # Concatenate the parts to form the final password
+    return password_part1 + password_part2 + password_part3
+
+# Example usage:
+# password = generate_password()
+# print(password)
