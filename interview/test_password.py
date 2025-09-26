@@ -33,23 +33,3 @@ def test_password_unique():
 def contains(s: str, collection: list):
     # check if any characters in collection are present in s
     return 1 in [c in s for c in collection]
-# remember to import random so syntax error does not occur and the code can randomize a number
-    letters = 'abcdefghijklmnopqrstuvwxyz'
-    numbers = '0123456789'
-    symbols = '!@#$%^&*'
-    print('the length of letters is: ' + str(len(letters)))
-    r = random.randint(0, len(letters) - 1)
-    print('the random int is: ' + str(r))
-    print('the random letter is: ' + letters[r])
-    password = generate_password()
-    assert password[0].isalpha()
-    assert password[1].isalpha()
-    assert password[2].isalpha()
-    assert password[3].isalpha()
-    assert password[4].isalpha() 
-    password = generate_password()
-    assert password[5].isdigit()
-    password = generate_password()
-    assert password[9].isalnum()
-    r = random.randint(0, len )
-    return ''
