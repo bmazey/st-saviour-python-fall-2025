@@ -27,5 +27,5 @@ def test_shredder():
     # Verify that the shred_last_character function works correctly.
     # Test case: shredding the last character of 'pandax' should result in 'panda'.
     assert shred_last_character('pandax') == 'panda'
-    # Test case: shredding the last character of 'saviourx' should result in 'saviour'.
+    # Test case: shredding the last character of 'saviourx' should result in 'saviour'
     assert shred_last_character('saviourx') == 'saviour'
