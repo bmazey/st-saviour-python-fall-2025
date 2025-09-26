@@ -21,8 +21,8 @@ def test_password_numberic_characters():
 def test_password_symbol_character():
     # TODO BONUS ensure the final character is a symbol
     password = generate_password()
-    assert not password[9]
-    assert not password[9]
+    assert not password[9].isalpha()
+    assert not password[9].isdigit()
 
 def test_password_length():
     # TODO BONUS ensure the length of the password is 10
