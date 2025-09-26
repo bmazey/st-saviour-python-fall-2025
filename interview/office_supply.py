@@ -16,7 +16,7 @@ def staple_to_end(s: str, c: str) -> str:
     """
 
     # TODO
-
+    # s + c is switched so words match up
     return  s + c 
 
 def shred_first_character(s: str) -> str:
@@ -24,7 +24,7 @@ def shred_first_character(s: str) -> str:
     shred_first_character() accepts a string s and returns a new string:
       - ex: shred_first_character('sst. saviour') -> 'st. saviour'
     """
-
+    # shred removes the first character
     # TODO
 
     return s[1:]

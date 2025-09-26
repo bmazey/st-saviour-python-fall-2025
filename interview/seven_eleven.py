@@ -12,9 +12,11 @@ def seven_eleven(number: int) -> str:
 def seven_eleven(number: int) -> str:
     if number % 7 == 0 and number % 11 == 0:
         return "seveneleven" 
-    elif number % 7 == 0: 
+    # if number goes in evening to 7 and 11 it'll run"
+    if number % 7 == 0: 
+    # if its just 7 it'll run one
         return "seven"
-    elif number % 11 == 0: 
+    if number % 11 == 0: 
+    # if its just 11 that's all that'll show up
         return "eleven"
-    else:
-        return ""
+    return ''
