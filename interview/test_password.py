@@ -14,21 +14,27 @@ def test_password_numberic_characters():
     # TODO BONUS ensure the placement of the 4 digit characters
     password = generate_password()
     assert password[5].isdigit()
-    # ...
-    pass
+    assert password[6].isdigit()
+    assert password[7].isdigit()
+    assert password[8].isdigit()
 
 def test_password_symbol_character():
     # TODO BONUS ensure the final character is a symbol
-    pass
+    password = generate_password()
+    assert not password[9]
+    assert not password[9]
 
 def test_password_length():
     # TODO BONUS ensure the length of the password is 10
-    pass
+    password = generate_password()
+    assert len(password) == 10
 
 def test_password_unique():
     # HINT we ignore collisions for the purposes of this exercise
     # TODO BONUS create two passwords, and ensure they are distinct
-    pass
+    first_password = generate_password()
+    second_password = generate_password()
+    assert not first_password == second_password
 
 def contains(s: str, collection: list):
     # check if any characters in collection are present in s
