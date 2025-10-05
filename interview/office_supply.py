@@ -5,8 +5,6 @@ def staple_to_front(s: str, c: str) -> str:
       - ex: staple_to_front('saviour', 'st. ') -> 'st. saviour'
     """
 
-    # TODO
-
     return ''
 
 def staple_to_end(s: str, c: str) -> str:
