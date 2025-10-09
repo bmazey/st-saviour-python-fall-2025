@@ -8,7 +8,7 @@ def test_password_alpha_characters():
     assert password[1].isalpha()
     assert password[2].isalpha()
     assert password[3].isalpha()
-    assert password[4].isalpha()
+    assert password[4].isalpha() 
   
 def test_password_numberic_characters():
     # TODO BONUS ensure the placement of the 4 digit characters
@@ -25,7 +25,11 @@ def test_password_symbol_character():
 
 def test_password_length():
     # TODO BONUS ensure the length of the password is 10
-    pass
+    password = generate_password()
+    c = 'clerveaux'
+    print (c[1::])
+
+
 
 def test_password_unique():
     # HINT we ignore collisions for the purposes of this exercise

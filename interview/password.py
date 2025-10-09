@@ -18,6 +18,7 @@ def generate_password() -> str:
     numbers = '0123456789'
     symbols = '!@#$%&*'
 
+    # add letters 
     password = ''
     r = random.randint(0, len(letters) - 1)
     password += letters[r]

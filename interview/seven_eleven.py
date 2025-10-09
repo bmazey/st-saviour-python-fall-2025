@@ -9,9 +9,9 @@ def seven_eleven(number: int) -> str:
     """
     if number % 7 == 0 and number % 11 == 0:
          return 'seveneleven'
-    if number % 7 == 0:
+    if number % 7 == 0: # modulo - receive a remainder 
          return "seven"
-    if number % 11 == 0:
+    if number % 11 == 0: #modulo - recieve a remainder 
          return "eleven"
     return ""
     

@@ -27,7 +27,7 @@ def shred_first_character(s: str) -> str:
 
     # TODO
 
-    return s[1::]
+    return s[1::] # slicing - length is going to be greater than the final position 
 
 def shred_last_character(s: str) -> str:
     """
@@ -37,5 +37,5 @@ def shred_last_character(s: str) -> str:
 
     # TODO
 
-    return s[:-1:]
+    return s[:-1:] # slicing - backwards 
 
