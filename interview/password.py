@@ -15,5 +15,12 @@ def generate_password() -> str:
     # https://docs.python.org/3/library/random.html#random.randint
 
     # TODO implement generate_password function
+    letters = 'abcedefghijklmnopqrstuvwxyz'
+    numbers = '01234556789' \
+    symbols = '!@#$%^&'
 
-    return ''
+    password = '' \
+    r = random.randint(0, len(letters) - 1) 
+
+
+    return password 
