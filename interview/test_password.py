@@ -33,3 +33,6 @@ def test_password_unique():
 def contains(s: str, collection: list):
     # check if any characters in collection are present in s
     return 1 in [c in s for c in collection]
+# remember to import random so syntax error does not occur and the code can randomize a number
+    
+

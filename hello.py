@@ -19,3 +19,7 @@ r = random.randint(0, len )
 # x = 5
 # y = 3
 # print(x + y)
+
+
+for i in range(5, 100, 2):
+    print('I will not cheat on my CS exam ... ' + str(i))
