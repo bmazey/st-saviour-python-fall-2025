@@ -61,8 +61,12 @@ def round_up(floats: list[float]) -> list[int]:
     """
 
     # TODO
-
-    return []
+    number = float
+    decimal = number - int(number)
+    if decimal >= 0.5:
+        return int(number) + 1
+    else:
+        return int(number)
 
 def evens_only(numbers: list[int]) -> list[int]:
     """
