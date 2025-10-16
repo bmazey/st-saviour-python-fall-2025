@@ -6,9 +6,11 @@ def summation(numbers: list[int]) -> int:
         ex: [0, 2, -1, 15] -> 16
     """
 
-    # TODO
-
-    return 0
+    result = 0
+    for number in numbers:
+        result +=number
+   
+    return result
 
 def find_negative(numbers: list[int]) -> int:
     """
@@ -17,10 +19,14 @@ def find_negative(numbers: list[int]) -> int:
     the provided list contains only a single negative number.
         ex: [11, 13, -1, 0, 9] -> 2
     """
-
+   
     # TODO
+    i = 0
+    while i < len(numbers):
+        if numbers[i] < 0:
+            return i
+        i+=1
 
-    return 0
 
 def find_greatest(numbers: list[int]) -> int:
     """
@@ -30,8 +36,7 @@ def find_greatest(numbers: list[int]) -> int:
     """
 
     # TODO
-
-    return 0
+    
 
 def remove(numbers: list[int], n: int) -> list[int]:
     """
@@ -41,8 +46,12 @@ def remove(numbers: list[int], n: int) -> list[int]:
     """
 
     # TODO
+    result = []
+    for number in numbers:
+        if number !=n:
+            result.append(number)
 
-    return []
+    return result
 
 def round_up(floats: list[float]) -> list[int]:
     """
