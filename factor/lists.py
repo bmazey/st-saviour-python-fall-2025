@@ -19,13 +19,14 @@ def find_negative(numbers: list[int]) -> int:
     the provided list contains only a single negative number.
         ex: [11, 13, -1, 0, 9] -> 2
     """
-
+    
+    # 
     i = 0
     while i < len(numbers):
         if numbers[i] < 0:
             return i
         i += 1
-        
+
     return 0
 
 def find_greatest(numbers: list[int]) -> int:
@@ -35,9 +36,15 @@ def find_greatest(numbers: list[int]) -> int:
         ex: [11, 13, -1, 4, 9] -> 13
     """
 
-    # TODO
+    # start with position of first number 
+    # use a for loop to explain that each successive number is greater than the number that came before it
+    # greatest = number means that the value of the number being tested is assigned to greatest
+    greatest = numbers[0]
+    for number in numbers:
+        if number > greatest:
+            greatest = number
 
-    return 0
+    return greatest
 
 def remove(numbers: list[int], n: int) -> list[int]:
     """
@@ -73,9 +80,15 @@ def evens_only(numbers: list[int]) -> list[int]:
         ex: [3, 4, 7, 8, 12] -> [4, 8, 12]
     """
 
-    # TODO
+    # 
+    result = []
+    i = 0
+    while i < len(numbers):
+        if numbers[i] % 2 == 0:  
+            result.append(numbers[i])
+        i += 1
 
-    return []
+    return result 
 
 def last_of_four_digits(numbers: list[int]) -> list[int]:
     """
