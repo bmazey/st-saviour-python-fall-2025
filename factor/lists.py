@@ -8,7 +8,7 @@ def summation(numbers: list[int]) -> int:
 
     result = 0
     for number in numbers:
-        result +=number
+        result += number
    
     return result
 
@@ -41,6 +41,7 @@ def find_greatest(numbers: list[int]) -> int:
     greatest = numbers[0]
     for number in numbers:
         if number > greatest:
+            # if the number is greatest then the assumed greatest, it is by definition the greatest
             greatest = number
 
     return greatest
@@ -57,6 +58,7 @@ def remove(numbers: list[int], n: int) -> list[int]:
     for number in numbers:
         if number !=n:
             result.append(number)
+            # append adds something to the end of the list
 
     return result
 
@@ -68,15 +70,16 @@ def round_up(floats: list[float]) -> list[int]:
     """
 
     # TODO
-    i = 0
-    number = float
-    decimal = float - int(float)
-    if decimal >= 0.5:
-        return int(float) + 1
-    else:
-        return int(float)
-    
-    i +=1
+
+    result = []
+    # easier to create a new list than change everything in current list
+    for num in floats:
+        if num - int(num) >= 0.5:
+            # part of the last lab
+            result.append(int(num) + 1)
+        else:
+            result.append(int(num))
+    return result
     
 
 def evens_only(numbers: list[int]) -> list[int]:
@@ -89,11 +92,12 @@ def evens_only(numbers: list[int]) -> list[int]:
     # TODO
     result = []
     i = 0
+    # make sure to initialize i before using it
     while i < len(numbers):
         if numbers[i] % 2 == 0:
             result.append(numbers[i])
         i+=1
-    
+    # i+=1 needs to be indented to line up with the if
 
     return result
 
@@ -106,7 +110,8 @@ def last_of_four_digits(numbers: list[int]) -> list[int]:
 
     # TODO
 
-    return []
+    return [n % 10 for n in numbers]
+# modulo 10 just returns the last number, like 1004/10 = 100 R 4, so it prints just the rekainder for n in numbers
 
 def merge(first: list[int], second: list[int]) -> list[int]:
     """
@@ -118,4 +123,8 @@ def merge(first: list[int], second: list[int]) -> list[int]:
 
     # TODO +5 Bonus
 
-    return []
+    merged_list = first + second
+    # combines the two lists, first and second
+    merged_list.sort()
+    # built in function that sorts lists
+    return merged_list
