@@ -13,7 +13,21 @@ if __name__ == '__main__':
     numbers = [3, 14, 7, 88, 7, 11]
     for x in numbers:
         print(x)
+
+
+    word = 'october'
+    reverse = ''
+
     
+       
+
+    # for c in word:
+        # reverse = c + reverse
+    
+    if word == word[::-1]:
+        print(word +  'is a palindrome!')    
+    else:
+        print(word + ' is NOT a palindrome!')
    
 
 
