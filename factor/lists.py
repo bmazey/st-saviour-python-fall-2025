@@ -111,7 +111,7 @@ def last_of_four_digits(numbers: list[int]) -> list[int]:
     # TODO
 
     return [n % 10 for n in numbers]
-# modulo 10 just returns the last number, like 1004/10 = 100 R 4, so it prints just the rekainder for n in numbers
+# modulo 10 just returns the last number, like 1004/10 = 100 R 4, so it prints just the remainder for n in numbers
 
 def merge(first: list[int], second: list[int]) -> list[int]:
     """
