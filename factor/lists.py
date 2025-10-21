@@ -23,7 +23,9 @@ def find_negative(numbers: list[int]) -> int:
     # TODO
     i = 0
     while i < len(numbers):
+        # ensures that its only checking the numbers in the list
         if numbers[i] < 0:
+            # negatives less than 0
             return i
         i+=1
 
@@ -36,7 +38,12 @@ def find_greatest(numbers: list[int]) -> int:
     """
 
     # TODO
-    
+    greatest = numbers[0]
+    for number in numbers:
+        if number > greatest:
+            greatest = number
+
+    return greatest
 
 def remove(numbers: list[int], n: int) -> list[int]:
     """
@@ -61,12 +68,16 @@ def round_up(floats: list[float]) -> list[int]:
     """
 
     # TODO
+    i = 0
     number = float
-    decimal = number - int(number)
+    decimal = float - int(float)
     if decimal >= 0.5:
-        return int(number) + 1
+        return int(float) + 1
     else:
-        return int(number)
+        return int(float)
+    
+    i +=1
+    
 
 def evens_only(numbers: list[int]) -> list[int]:
     """
@@ -76,8 +87,15 @@ def evens_only(numbers: list[int]) -> list[int]:
     """
 
     # TODO
+    result = []
+    i = 0
+    while i < len(numbers):
+        if numbers[i] % 2 == 0:
+            result.append(numbers[i])
+        i+=1
+    
 
-    return []
+    return result
 
 def last_of_four_digits(numbers: list[int]) -> list[int]:
     """
