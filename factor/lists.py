@@ -6,9 +6,14 @@ def summation(numbers: list[int]) -> int:
         ex: [0, 2, -1, 15] -> 16
     """
 
-    # TODO
-
-    return 0
+    # Stores the sum
+    result = 0
+    # Go through each number in the input
+    for number in numbers:
+        # Adds the current number to the result
+        result += number
+    # Returns the calculated sum
+    return result
 
 def find_negative(numbers: list[int]) -> int:
     """
@@ -18,9 +23,12 @@ def find_negative(numbers: list[int]) -> int:
         ex: [11, 13, -1, 0, 9] -> 2
     """
 
-    # TODO
-
-    return 0
+    # Loop through list to find index and value
+    for i, num in enumerate(numbers):
+        # Checks if number is negative
+        if num < 0:
+            # Returns index of number if negative
+            return i
 
 def find_greatest(numbers: list[int]) -> int:
     """
@@ -29,9 +37,8 @@ def find_greatest(numbers: list[int]) -> int:
         ex: [11, 13, -1, 4, 9] -> 13
     """
 
-    # TODO
-
-    return 0
+    # Uses max function to find greatest number
+    return max(numbers)
 
 def remove(numbers: list[int], n: int) -> list[int]:
     """
@@ -40,9 +47,18 @@ def remove(numbers: list[int], n: int) -> list[int]:
         ex: [0, 1, 1, 2, 2, 3], n = 2 -> [0, 1, 1, 3]
     """
 
-    # TODO
-
-    return []
+    # Makes an empty list for the result
+    result = []
+    
+    # Goes over each number in the list
+    for number in numbers:
+        # Checks if each number is not equal to n
+        if number != n:
+            # Adds the number to the new list
+            result.append(number)
+    
+    # Returns the new list
+    return result
 
 def round_up(floats: list[float]) -> list[int]:
     """
@@ -51,9 +67,8 @@ def round_up(floats: list[float]) -> list[int]:
         ex: [1.2, 3.5, 4.2, 0.0] -> [1, 4, 4, 0]
     """
 
-    # TODO
-
-    return []
+    # Rounds each float to the nearest int
+    return [round(f) for f in floats]
 
 def evens_only(numbers: list[int]) -> list[int]:
     """
@@ -62,9 +77,8 @@ def evens_only(numbers: list[int]) -> list[int]:
         ex: [3, 4, 7, 8, 12] -> [4, 8, 12]
     """
 
-    # TODO
-
-    return []
+    # Returns a list of even numbers
+    return [num for num in numbers if num % 2 == 0]
 
 def last_of_four_digits(numbers: list[int]) -> list[int]:
     """
@@ -73,9 +87,8 @@ def last_of_four_digits(numbers: list[int]) -> list[int]:
         ex: [1004, 1112, 5667, 8009] -> [4, 2, 7, 9]
     """
 
-    # TODO
-
-    return []
+    # Modulo takes the last digit of each number
+    return [num % 10 for num in numbers]
 
 def merge(first: list[int], second: list[int]) -> list[int]:
     """
@@ -85,6 +98,26 @@ def merge(first: list[int], second: list[int]) -> list[int]:
         ex: [0, 2, 4, 8] + [1, 3, 5] -> [0, 1, 2, 3, 4, 5, 8]
     """
 
-    # TODO +5 Bonus
-
-    return []
+     # Creates an empty list for the result
+    result = []
+    i, j = 0, 0  # Indicates positions in the first and second lists
+    
+    # Compares both lists
+    while i < len(first) and j < len(second):
+        if first[i] < second[j]:
+            # Attaches element in first list if it is smaller
+            result.append(first[i])
+            i += 1
+        else:
+            # Attaches element in the second list otherwises
+            result.append(second[j])
+            j += 1
+    
+    # Attaches any left over elements in the first list
+    result.extend(first[i:])
+    
+    # Attaches any left over elements in the second list
+    result.extend(second[j:])
+    
+    # Returns the combined, organized list
+    return result
