@@ -6,9 +6,13 @@ def summation(numbers: list[int]) -> int:
         ex: [0, 2, -1, 15] -> 16
     """
 
-    # TODO
+    # this variable will store our sum
+    result = 0
+    for number in numbers:
+        # add the number to the result variable
+        result += number
 
-    return 0
+    return result
 
 def find_negative(numbers: list[int]) -> int:
     """
@@ -18,7 +22,12 @@ def find_negative(numbers: list[int]) -> int:
         ex: [11, 13, -1, 0, 9] -> 2
     """
 
-    # TODO
+    i = 0
+    while i < len(numbers):
+        # check if the number is negative
+        if numbers[i] < 0:
+            return i
+        i += 1
 
     return 0
 
@@ -29,9 +38,14 @@ def find_greatest(numbers: list[int]) -> int:
         ex: [11, 13, -1, 4, 9] -> 13
     """
 
-    # TODO
+    # start with the first number in the list
+    greatest = numbers[0]
+    for number in numbers: 
+        # if the number we're on is bigger, update greatest variable
+        if number > greatest: 
+            greatest = number
 
-    return 0
+    return greatest 
 
 def remove(numbers: list[int], n: int) -> list[int]:
     """
@@ -62,9 +76,12 @@ def evens_only(numbers: list[int]) -> list[int]:
         ex: [3, 4, 7, 8, 12] -> [4, 8, 12]
     """
 
-    # TODO
+    evens = []
+    for number in numbers: 
+        if number % 2 == 0:
+            evens.append(number)
 
-    return []
+    return evens
 
 def last_of_four_digits(numbers: list[int]) -> list[int]:
     """
@@ -73,7 +90,7 @@ def last_of_four_digits(numbers: list[int]) -> list[int]:
         ex: [1004, 1112, 5667, 8009] -> [4, 2, 7, 9]
     """
 
-    # TODO
+    
 
     return []
 
