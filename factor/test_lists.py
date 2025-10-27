@@ -100,3 +100,4 @@ def test_merge():
 
     expected_length = len(list1) + len(list2) # this will show the length of the concatonated lists
     assert len(list1 +list2) == expected_length # this will make sure that they are equal to each other
+    
