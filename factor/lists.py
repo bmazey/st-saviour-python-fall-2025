@@ -19,7 +19,7 @@ def find_negative(numbers: list[int]) -> int:
     the provided list contains only a single negative number.
         ex: [11, 13, -1, 0, 9] -> 2
     """
-    index = 0  # starts at position zero
+    index = 0 # starts at position zero
     while index < len(numbers): # the loop will keep going as long as the index is less than the len of the numbers
         if numbers[index] < 0: # shows that if the index is less than 0 
             return index # it will return the the index
@@ -101,6 +101,6 @@ def merge(first: list[int], second: list[int]) -> list[int]:
         ex: [0, 2, 4, 8] + [1, 3, 5] -> [0, 1, 2, 3, 4, 5, 8]
     """
     new_list = first + second # this states that the new list being returned with the two lists merged. 
-    new_list.sort(first + second) # this adds the two lists together
+    new_list.sort() # this adds the two lists together
 
     return new_list # returns the new list
