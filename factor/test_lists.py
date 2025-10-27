@@ -89,5 +89,10 @@ def test_last_of_four_digits():
 def test_merge():
     # TODO +5 Bonus!
     # create two lists and use lists.merge()
+    
     # assert proper order, content, & length of resulting list
-    pass
+
+    list1 = [2, 4, 6]
+    list2 = [1, 3, 5]
+    merged_list = [*list1, *list2]
+    print(merged_list)
