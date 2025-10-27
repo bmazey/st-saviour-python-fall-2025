@@ -91,3 +91,8 @@ def test_merge():
     # create two lists and use lists.merge()
     # assert proper order, content, & length of resulting list
     pass
+    
+    list1 = [1, 2, 3]
+    list2 = [4, 5, 6]
+    merged_list = [*list1, *list2]
+    print(merged_list)
