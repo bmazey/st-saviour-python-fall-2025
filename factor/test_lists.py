@@ -90,5 +90,13 @@ def test_merge():
     # TODO +5 Bonus!
     # create two lists and use lists.merge()
     # assert proper order, content, & length of resulting list
-    pass
  
+    list1 = [1, 2, 3] # this is an example list
+    list2 = [4, 5, 6] # this is an example list
+    result = lists.merge(list1 + list2) # this will allow the two example lists created to be concatonated together
+
+    expected_list = [1, 2, 3, 4, 5, 6] # this shows what the expected outcome is 
+    assert list1 + list2 == expected_list # this will assure you that the concatonated list is equal to the expected list
+
+    expected_length = len(list1) + len(list2) # this will show the length of the concatonated lists
+    assert len(list1 +list2) == expected_length # this will make sure that they are equal to each other
