@@ -67,8 +67,8 @@ def round_up(floats: list[float]) -> list[int]:
         ex: [1.2, 3.5, 4.2, 0.0] -> [1, 4, 4, 0]
     """
 
-    # Rounds each float to the nearest int
-    return [round(f) for f in floats]
+    # Rounds each float to the nearest int by rounding up if decimal is >= 0.5
+    return [int(f + 0.5) for f in floats]
 
 def evens_only(numbers: list[int]) -> list[int]:
     """
