@@ -104,7 +104,7 @@ def evens_only(numbers: list[int]) -> list[int]:
         if numbers[i] % 2 == 0: 
             #attaches even number to list 
             result.append(numbers[i])
-            i+=1
+        i+=1
     return result
     # TODO
 
@@ -115,10 +115,13 @@ def last_of_four_digits(numbers: list[int]) -> list[int]:
     list containing only the last digit of each number in the original sequence.
         ex: [1004, 1112, 5667, 8009] -> [4, 2, 7, 9]
     """
-    
+   
+
+#modulo ensures that last digit is found 
+
     # TODO
 
-    return []
+    return [n % 10 for n in numbers]
 
 def merge(first: list[int], second: list[int]) -> list[int]:
     """
