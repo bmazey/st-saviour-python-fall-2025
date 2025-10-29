@@ -8,7 +8,13 @@ def summation(numbers: list[int]) -> int:
 
     # TODO
 
-    return 0
+    result = 0 
+    # for is a loop 
+    for number in numbers: 
+        # += adds string to another string 
+        result += number 
+
+    return result 
 
 def find_negative(numbers: list[int]) -> int:
     """
@@ -17,8 +23,16 @@ def find_negative(numbers: list[int]) -> int:
     the provided list contains only a single negative number.
         ex: [11, 13, -1, 0, 9] -> 2
     """
-
+    
     # TODO
+    i = 0  
+    #While loop determines the length 
+    while i < len(numbers): 
+        #code efficiently runs when integer is negative (less than 0)
+        if numbers [i] < 0: 
+            #Return exits the function and sends it back 
+            return i 
+        i += 1
 
     return 0
 
@@ -28,10 +42,18 @@ def find_greatest(numbers: list[int]) -> int:
     found within.
         ex: [11, 13, -1, 4, 9] -> 13
     """
+    greatest = numbers[0]
 
-    # TODO
+    i = 0  
+    while i < len(numbers):
+        #assigns the title of greatest to the greatest number as it goes down a list
+        if numbers[i] > greatest: 
+            #i represents the number the code is currently on 
+            greatest = numbers[i]
+        i += 1
 
-    return 0
+    return greatest
+
 
 def remove(numbers: list[int], n: int) -> list[int]:
     """
@@ -41,19 +63,33 @@ def remove(numbers: list[int], n: int) -> list[int]:
     """
 
     # TODO
+    result = []
+    for number in numbers: 
+        # if number does not equal n - != n 
+        if number != n: 
+            #attaches number if it is not already in list 
+            result.append(number)
 
-    return []
+    return result
 
 def round_up(floats: list[float]) -> list[int]:
     """
     round_up() accepts a list of *non-negative* floats and returns a list of
     rounded integers. Floats are rounded up iff the decimal is >= 0.5.
         ex: [1.2, 3.5, 4.2, 0.0] -> [1, 4, 4, 0]
-    """
-
+    """ 
     # TODO
 
-    return []
+    result = [] 
+
+    for num in floats: 
+        #ensures that amount is a whole number 
+        if num - int (num) >= 0.5: 
+            #append attaches 
+            result.append(int(num)+1) 
+        else: 
+            result.append(int(num))
+    return result
 
 def evens_only(numbers: list[int]) -> list[int]:
     """
@@ -61,10 +97,17 @@ def evens_only(numbers: list[int]) -> list[int]:
     only the even numbers found in the provided list, in their original order.
         ex: [3, 4, 7, 8, 12] -> [4, 8, 12]
     """
-
+    result = [] 
+    i = 0 
+    while i < len(numbers):
+        #modulo ensures number is equal if can be divided by 2 with no remainder 
+        if numbers[i] % 2 == 0: 
+            #attaches even number to list 
+            result.append(numbers[i])
+        i+=1
+    return result
     # TODO
 
-    return []
 
 def last_of_four_digits(numbers: list[int]) -> list[int]:
     """
@@ -72,10 +115,13 @@ def last_of_four_digits(numbers: list[int]) -> list[int]:
     list containing only the last digit of each number in the original sequence.
         ex: [1004, 1112, 5667, 8009] -> [4, 2, 7, 9]
     """
+   
+
+#modulo ensures that last digit is found 
 
     # TODO
 
-    return []
+    return [n % 10 for n in numbers]
 
 def merge(first: list[int], second: list[int]) -> list[int]:
     """
