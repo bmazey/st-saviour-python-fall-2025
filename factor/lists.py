@@ -6,9 +6,11 @@ def summation(numbers: list[int]) -> int:
         ex: [0, 2, -1, 15] -> 16
     """
 
-    # TODO
+    result = 0 
+    for number in numbers:
+        result += number 
 
-    return 0
+    return result 
 
 def find_negative(numbers: list[int]) -> int:
     """
@@ -18,9 +20,14 @@ def find_negative(numbers: list[int]) -> int:
         ex: [11, 13, -1, 0, 9] -> 2
     """
 
-    # TODO
+    i = 0
+    while i < len(numbers):
+        if numbers[i] < 0:
+           return i 
+        i += 1 
 
     return 0
+    
 
 def find_greatest(numbers: list[int]) -> int:
     """
@@ -28,10 +35,13 @@ def find_greatest(numbers: list[int]) -> int:
     found within.
         ex: [11, 13, -1, 4, 9] -> 13
     """
+ 
+    greatest = numbers[0]
+    for number in numbers: 
+        if number > greatest: 
+            greatest = number 
 
-    # TODO
-
-    return 0
+    return greatest 
 
 def remove(numbers: list[int], n: int) -> list[int]:
     """
@@ -40,9 +50,13 @@ def remove(numbers: list[int], n: int) -> list[int]:
         ex: [0, 1, 1, 2, 2, 3], n = 2 -> [0, 1, 1, 3]
     """
 
-    # TODO
+    result = []
 
-    return []
+    for number in numbers: 
+        if number != n: 
+            result.append(number)
+
+    return result
 
 def round_up(floats: list[float]) -> list[int]:
     """
@@ -51,20 +65,30 @@ def round_up(floats: list[float]) -> list[int]:
         ex: [1.2, 3.5, 4.2, 0.0] -> [1, 4, 4, 0]
     """
 
-    # TODO
+    result = []
+    for number in floats: 
+        if number - int(number) >= 0.5: 
+            result.append(int(number) +1)
+        else:
+            result.append(int(number))
+    return result 
 
-    return []
-
+       
 def evens_only(numbers: list[int]) -> list[int]:
     """
     evens_only() accepts a list of integers and returns a new list containing
     only the even numbers found in the provided list, in their original order.
         ex: [3, 4, 7, 8, 12] -> [4, 8, 12]
     """
+    result = []
+    i = 0 
+    while i < len(numbers): 
+        if numbers[i] % 2 == 0: 
+            result.append(numbers[i])
+        i += 1  
+    
 
-    # TODO
-
-    return []
+    return result 
 
 def last_of_four_digits(numbers: list[int]) -> list[int]:
     """
@@ -73,9 +97,10 @@ def last_of_four_digits(numbers: list[int]) -> list[int]:
         ex: [1004, 1112, 5667, 8009] -> [4, 2, 7, 9]
     """
 
-    # TODO
-
-    return []
+    result = []
+    for num in numbers: 
+        result.append(num % 10) 
+    return result 
 
 def merge(first: list[int], second: list[int]) -> list[int]:
     """
@@ -85,6 +110,17 @@ def merge(first: list[int], second: list[int]) -> list[int]:
         ex: [0, 2, 4, 8] + [1, 3, 5] -> [0, 1, 2, 3, 4, 5, 8]
     """
 
-    # TODO +5 Bonus
+    result = [] 
+    i = 0 
+    j = 0 
+
+    while i < len(first) and j < len(second):
+        if first[i] < second[j]:
+            result.append(first[i]) 
+            i += 1
+        else: 
+            result.append(second[j]) 
+
+    
 
     return []
