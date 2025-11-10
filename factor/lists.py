@@ -86,6 +86,7 @@ def evens_only(numbers: list[int]) -> list[int]:
         ex: [3, 4, 7, 8, 12] -> [4, 8, 12]
     """
     result = []
+    i = 0
     while i < numbers: # i is greater than numbers
         if numbers[i] % 2 == 0:
          result.append(numbers(i))
