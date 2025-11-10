@@ -90,15 +90,14 @@ def test_merge():
     # TODO +5 Bonus!
     # create two lists and use lists.merge()
     # assert proper order, content, & length of resulting list
-    pass
 
-list1 = [1,3,5] # first list
-list2 = [2,4,6] # second list
-result = lists.merge(list1, list2) #  both lists merges
+    list1 = [1,3,5] # first list
+    list2 = [2,4,6] # second list
+    result = lists.merge(list1, list2) #  both lists merges
 
-expected_list = [1, 3, 5, 2, 4, 6]
-assert result == expected_list
+    expected_list = [1, 3, 5, 2, 4, 6]
+    assert result == expected_list
 
-expected_length = len(list1) + len(list2) #list length
-assert len(result) == expected_length
+    expected_length = len(list1) + len(list2) #list length
+    assert len(result) == expected_length
 
